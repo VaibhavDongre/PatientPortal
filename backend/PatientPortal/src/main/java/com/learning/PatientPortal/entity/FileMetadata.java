@@ -1,4 +1,4 @@
-package entity;
+package com.learning.PatientPortal.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
