@@ -22,7 +22,7 @@ public class FileService {
 
     private final Path storageDirectory;
 
-    public FileService(FileRepository fileRepository, @Value("${file.storage.loaction}") String storageDir) throws IOException {
+    public FileService(FileRepository fileRepository, @Value("${file.storage.location}") String storageDir) throws IOException {
         this.fileRepository = fileRepository;
         this.storageDirectory = Paths.get(storageDir).toAbsolutePath().normalize();
 
