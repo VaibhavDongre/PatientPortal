@@ -23,8 +23,8 @@ function App() {
   }, [])
 
   return (
-    <div style={{ padding: "20px"}}>
-      <h2>Patient Portal</h2>
+    <div className='container mt-5'>
+      <h2 className='mb-4 fw-bold text-center'>Patient Portal</h2>
 
       <FileUpload onUploadSuccess={loadFiles}/>
       <UploadedFiles files={files} refreshList={loadFiles}/>

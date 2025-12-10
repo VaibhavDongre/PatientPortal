@@ -31,13 +31,16 @@ export default function FileUpload( {onUploadSuccess}) {
             }
         }
     return (
-        <div style={{marginBottom: "20px"}}>
+        <div className="d-flex gap-3 align-items-center mb-4">
             <input 
                 type="file" 
                 accept="application/pdf"
+                className="form-control w-50"
                 onChange={handleFileChange}
                 />
-            <button onClick={handleUpload} style={{ marginLeft: "10px"}}>
+            <button 
+                className="btn btn-primary"
+                onClick={handleUpload}>
                 Uplaod
             </button>
         </div>

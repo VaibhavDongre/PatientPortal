@@ -33,8 +33,8 @@ export default function UploadedFiles({files, refreshList}) {
     }
 
     return (
-        <table border="1" width="100%" cellPadding="10">
-            <thead>
+        <table className="table table-stripped table-hover">
+            <thead className="table-dark">
                 <tr>
                     <th>ID</th>
                     <th>Filename</th>
@@ -56,6 +56,7 @@ export default function UploadedFiles({files, refreshList}) {
 
                         <td>
                             <button 
+                                className="btn btn-success btn-sm"
                                 onClick={()=>handleDownload(f.id, f.originalFilename)}
                             > 
                                 Download
@@ -64,8 +65,8 @@ export default function UploadedFiles({files, refreshList}) {
 
                         <td>
                             <button 
+                                className="btn btn-danger btn-sm"
                                 onClick={()=>handleDelete(f.id)}
-                                style={{color:"red"}}
                             >
                                 Delete
                             </button>
