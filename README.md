@@ -45,8 +45,9 @@ A full stack web application for uplaoding. listing, downloading, and deleting P
 - Backend runs at: (`http://localhost:8080`)
 
 ### 3. Start the Frontend
+```bash
 - cd frontend
 - npm install
-- npm run dev 
+- npm run dev ```
 
-Front end runs at: (`http://localhost:5173`)
+###Front end runs at: (`http://localhost:5173`)
