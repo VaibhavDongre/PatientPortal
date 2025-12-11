@@ -32,23 +32,21 @@ A full stack web application for uplaoding. listing, downloading, and deleting P
 ### 1.Clone the repository
 ```bash git clone https://github.com/VaibhavDongre/PatientPortal.git ```
 
-2. Start the Backend (Springboot)
+### 2. Start the Backend (Springboot)
 Configure MySQL:
 Create database : ```bash CREATE DATABASE patientdata ```
 Update application.properties : 
-```bash
-spring.datasource.url=jdbc:mysql://localhost:3306/patientdata
-spring.datasource.username=YOUR_USERNAME
-spring.datasource.password=YOUR_PASSWORD
-file.storage.location=E:/uploads or OTHER DIRECTORY ```
+```bash spring.datasource.url=jdbc:mysql://localhost:3306/patientdata ```
+```bash spring.datasource.username=YOUR_USERNAME ```
+```bash spring.datasource.password=YOUR_PASSWORD ```
+```bash file.storage.location=E:/uploads or OTHER DIRECTORY ```
 
-Run Backend: ```bash mvn spring-boot:run ```
-Backend runs at: ```bash http://localhost:8080 ```
+Run Backend: mvn spring-boot:run
+Backend runs at: (`http://localhost:8080`)
 
-3. Start the Frontend
-```bash
+### 3. Start the Frontend
 cd frontend
 npm install
-npm run dev ```
+npm run dev 
 
-Front end runs at: ```bash http://localhost:5173 ```
+Front end runs at: (`http://localhost:5173`)
