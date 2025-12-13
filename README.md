@@ -65,6 +65,7 @@ http://localhost:8080
 ## 3. Start the Frontend
 ```bash
 cd frontend
+cd patient-portal-ui
 npm install
 npm run dev
 ```
